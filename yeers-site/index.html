@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YEERS — Real Projects. Real Results.</title>
+  <meta name="description" content="Case studies from YEERS — Yorkshire's renewable energy specialists. Solar, heat pumps, battery storage, EV charging and Warm Homes projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">YEERS</a>
+    <div class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@yeers.co.uk" class="nav__cta">Get a Quote</a>
+    </div>
+    <button class="nav__burger" aria-label="Menu" onclick="this.closest('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__grid-lines"></div>
+    <div class="hero__content">
+      <div class="hero__tag reveal">Case Studies</div>
+      <h1 class="hero__title reveal delay-1">
+        <span class="hero__title-line">Real Projects.</span>
+        <span class="hero__title-line accent">Real Results.</span>
+      </h1>
+      <p class="hero__sub reveal delay-2">
+        From single solar arrays to full Warm Homes retrofits — every project documented, every saving proven.
+      </p>
+      <a href="#projects" class="btn btn--primary reveal delay-3">View All Projects</a>
+    </div>
+    <div class="hero__stats reveal delay-2">
+      <div class="stat">
+        <span class="stat__num">240+</span>
+        <span class="stat__label">Installations</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">£1.2M</span>
+        <span class="stat__label">Customer Savings</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">4.9★</span>
+        <span class="stat__label">Average Rating</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">scroll</div>
+  </header>
+
+  <!-- ── FILTER BAR ────────────────────────────────────────────────────────── -->
+  <section class="filter-bar" id="projects">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="solar">Solar</button>
+        <button class="filter-btn" data-filter="heatpump">Heat Pumps</button>
+        <button class="filter-btn" data-filter="battery">Battery Storage</button>
+        <button class="filter-btn" data-filter="ev">EV Charging</button>
+        <button class="filter-btn" data-filter="warmhomes">Warm Homes</button>
+        <button class="filter-btn" data-filter="electrical">Electrical</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CASE STUDY GRID ───────────────────────────────────────────────────── -->
+  <main class="projects container" id="project-grid">
+
+    <!-- Card 1 -->
+    <article class="card reveal" data-category="solar battery">
+      <a href="case-studies/solar-battery-hull.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/solar-hull.jpg" alt="Solar & Battery Hull" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--solar">Solar</span>
+            <span class="tag tag--battery">Battery</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">Hull · Jan 2026</div>
+          <h2 class="card__title">12-Panel Solar + 10kWh Battery — Semi-Detached, Hull</h2>
+          <p class="card__excerpt">A working family cut their electricity bill by 78% with a Sigen hybrid system and battery. Fully funded under ECO4.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">78%</span><span class="result__key">Bill reduction</span></div>
+            <div class="result"><span class="result__val">£1,240</span><span class="result__key">Annual saving</span></div>
+            <div class="result"><span class="result__val">4.2T</span><span class="result__key">CO₂ saved/yr</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card reveal delay-1" data-category="heatpump warmhomes">
+      <a href="case-studies/heatpump-york.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/heatpump-york.jpg" alt="Heat Pump York" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--heatpump">Heat Pump</span>
+            <span class="tag tag--warmhomes">Warm Homes</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">York · Feb 2026</div>
+          <h2 class="card__title">8kW ASHP + Underfloor Heating — Victorian Terrace, York</h2>
+          <p class="card__excerpt">A draughty Victorian terrace transformed into a warm, low-carbon home. Full Warm Homes grant covered the entire installation.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">£0</span><span class="result__key">Customer cost</span></div>
+            <div class="result"><span class="result__val">62%</span><span class="result__key">Heating reduction</span></div>
+            <div class="result"><span class="result__val">COP 3.4</span><span class="result__key">Efficiency rating</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card reveal delay-2" data-category="solar warmhomes electrical">
+      <a href="case-studies/warm-homes-goole.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/warm-homes-goole.jpg" alt="Warm Homes Goole" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--warmhomes">Warm Homes</span>
+            <span class="tag tag--solar">Solar</span>
+            <span class="tag tag--electrical">Electrical</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">Goole · Jan 2026</div>
+          <h2 class="card__title">Full Warm Homes Retrofit — 3-Bed Terraced, Goole</h2>
+          <p class="card__excerpt">End-to-end retrofit: solar, new consumer unit, LED lighting, and smart controls. EPC jumped from E to B in a single install.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">E → B</span><span class="result__key">EPC rating</span></div>
+            <div class="result"><span class="result__val">£1,890</span><span class="result__key">Annual saving</span></div>
+            <div class="result"><span class="result__val">100%</span><span class="result__key">Grant funded</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="card reveal" data-category="ev electrical">
+      <a href="case-studies/ev-charger-leeds.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/ev-leeds.jpg" alt="EV Charger Leeds" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--ev">EV Charging</span>
+            <span class="tag tag--electrical">Electrical</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">Leeds · Dec 2025</div>
+          <h2 class="card__title">Zappi 7kW EV Charger + Consumer Unit Upgrade — Leeds</h2>
+          <p class="card__excerpt">Smart EV charger installed alongside a full consumer unit upgrade. Solar-aware charging means the car runs on sunshine.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">7kW</span><span class="result__key">Charge speed</span></div>
+            <div class="result"><span class="result__val">£680</span><span class="result__key">Annual fuel saving</span></div>
+            <div class="result"><span class="result__val">1 day</span><span class="result__key">Install time</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="card reveal delay-1" data-category="solar battery electrical">
+      <a href="case-studies/commercial-solar-beverley.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/commercial-beverley.jpg" alt="Commercial Solar Beverley" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--solar">Solar</span>
+            <span class="tag tag--battery">Battery</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">Beverley · Nov 2025</div>
+          <h2 class="card__title">32-Panel Commercial Solar + 20kWh Storage — Beverley</h2>
+          <p class="card__excerpt">Agricultural business eliminated daytime grid dependency entirely. System pays back in under 4 years.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">32</span><span class="result__key">Panels</span></div>
+            <div class="result"><span class="result__val">£4,200</span><span class="result__key">Annual saving</span></div>
+            <div class="result"><span class="result__val">3.8yr</span><span class="result__key">Payback</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="card reveal delay-2" data-category="heatpump battery">
+      <a href="case-studies/heatpump-battery-doncaster.html" class="card__link">
+        <div class="card__image-wrap">
+          <img src="assets/images/heatpump-doncaster.jpg" alt="Heat Pump Doncaster" class="card__image" loading="lazy" onerror="this.parentElement.classList.add('card__image-wrap--placeholder')" />
+          <div class="card__image-overlay"></div>
+          <div class="card__tags">
+            <span class="tag tag--heatpump">Heat Pump</span>
+            <span class="tag tag--battery">Battery</span>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">Doncaster · Oct 2025</div>
+          <h2 class="card__title">12kW ASHP + SigenStor Battery — Detached, Doncaster</h2>
+          <p class="card__excerpt">Detached property replaced oil boiler with a Sigen ASHP and paired it with a 10kWh battery for overnight storage.</p>
+          <div class="card__results">
+            <div class="result"><span class="result__val">Oil→HP</span><span class="result__key">Fuel switch</span></div>
+            <div class="result"><span class="result__val">£2,100</span><span class="result__key">Annual saving</span></div>
+            <div class="result"><span class="result__val">7.2T</span><span class="result__key">CO₂ saved/yr</span></div>
+          </div>
+          <span class="card__cta">Read Case Study →</span>
+        </div>
+      </a>
+    </article>
+
+  </main>
+
+  <!-- ── ABOUT STRIP ───────────────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text reveal">
+        <div class="about__tag">Who We Are</div>
+        <h2 class="about__title">Yorkshire's Renewable Energy Specialists</h2>
+        <p>YEERS installs solar, heat pumps, battery storage, EV chargers, and full electrical systems across Yorkshire and the Humber. Every case study on this site is a real project, with real numbers — no estimates, no stock photos.</p>
+        <a href="mailto:hello@yeers.co.uk" class="btn btn--outline">Talk to the Team</a>
+      </div>
+      <div class="about__logos reveal delay-1">
+        <div class="logo-badge">MCS Certified</div>
+        <div class="logo-badge">Which? Trusted</div>
+        <div class="logo-badge">ECO4 Approved</div>
+        <div class="logo-badge">Warm Homes Partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">YEERS</span>
+        <p>Yorkshire's Renewable Energy Specialists</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Case Studies</a>
+        <a href="mailto:hello@yeers.co.uk">Contact</a>
+      </div>
+      <div class="footer__copy">© 2026 YEERS. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
