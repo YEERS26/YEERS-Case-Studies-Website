@@ -4,10 +4,10 @@
 
 /* ── Variables ──────────────────────────────────────────────────────── */
 :root {
-  --c-black:      #3d2b0f;
-  --c-dark:       #1e1508;
-  --c-surface:    #16191f;
-  --c-border:     #252830;
+  --c-black:      #2c1a06;
+  --c-dark:       #1e1205;
+  --c-surface:    #2a1c08;
+  --c-border:     #3d2a0f;
   --c-white:      #f5f5f0;
   --c-muted:      #8a8f9e;
   --c-accent:     #00c9b1;   /* electric lime — the signature */
